@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  proyecto-integracion:
+    container_name: proyecto-integracion
+    build:
+      context: .
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+
